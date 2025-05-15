@@ -1,0 +1,96 @@
+Gerenciador de Senhas
+
+Projeto em Java para gerenciamento de senhas com foco em segurança, criptografia e verificação de vazamentos.
+
+---
+
+Funcionalidades
+
+- ✅ Cadastro de senhas com criptografia AES
+- ✅ Autenticação com senha mestre + 2FA
+- ✅ Geração de senhas seguras
+- ✅ Verificação de vazamento com API "Have I Been Pwned"
+- ✅ Interface simples via terminal
+
+---
+
+Como executar
+
+Pré-requisitos
+
+- Java 8 ou superior
+- Eclipse ou outra IDE Java
+- Biblioteca `jbcrypt` (inclusa na pasta `lib/`)
+
+Passo a passo
+
+1. Clone o repositório ou baixe o projeto
+2. Abra no Eclipse
+3. Adicione o `jbcrypt-0.4.jar` ao Build Path:
+   - Clique com o botão direito no `.jar` > Build Path > Add to Build Path
+4. Execute o arquivo `App.java`
+
+---
+
+Acesso ao sistema
+
+- **Senha mestre:** `admin123`
+- **Código 2FA:** `123456`
+
+---
+
+Capturas de Tela (opcional)
+
+> *(Você pode adicionar prints do terminal aqui se quiser)*
+
+---
+
+Estrutura do Projeto
+
+src/
+├── gerenciadorsenhas/
+│ └── App.java
+├── controller/
+│ ├── AuthController.java
+│ └── PasswordController.java
+├── service/
+│ ├── AuthService.java
+│ ├── PasswordService.java
+│ └── PasswordGenerator.java
+├── util/
+│ ├── CryptoUtil.java
+│ ├── TwoFactorUtil.java
+│ └── HaveIBeenPwnedUtil.java
+lib/
+└── jbcrypt-0.4.jar
+
+
+---
+
+Tecnologias Utilizadas
+
+- Java
+- Criptografia AES
+- Biblioteca [jBCrypt](https://www.mindrot.org/projects/jBCrypt/)
+- API pública [Have I Been Pwned](https://haveibeenpwned.com/API)
+- Git e GitHub
+
+---
+
+Segurança
+
+- Senhas são armazenadas criptografadas com AES
+- Senha mestre validada com `bcrypt`
+- Autenticação 2FA (simples, baseado em código fixo)
+
+---
+
+Autor
+
+Desenvolvido como parte de projeto acadêmico.  
+Professor: Alexsandro Henrique Batista  
+Aluno: José Soares da Silva Lima 
+Curso: Análise e Desenvolvimento de Sistemas / 5º Periodo.
+
+
+
